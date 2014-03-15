@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <script>
-        // UNCOMMENT AND SUET YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
+        // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
          var d_id  = 'xxxxxx',
              g_id  = 'UA-XXXXXXXX-X', // Format: UA-########-#, Example: UA-11220899-1
              g_url = 'XXXXXXX.XXX' // Format: #####.####, Example: webdesignporto.com
@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "highlighter/prettify.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -51,5 +52,9 @@
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
+    
+    {{! Scripts }}
+    <script type='text/javascript' src='/assets/highlighter/prettify.js'></script>
+    <script type='text/javascript' src='/assets/js/shell.js'></script>
 </body>
 </html>
