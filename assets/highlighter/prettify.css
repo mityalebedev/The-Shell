@@ -1,21 +1,21 @@
 /* Pretty printing styles. Used with prettify.js. */
 
 /* SPAN elements with the classes below are added by prettyprint. */
-.pln { color: #000 }  /* plain text */
+.pln { color: #EEEEEE }    /* plaintext */
 
 @media screen {
-  .str { color: #080 }  /* string content */
-  .kwd { color: #008 }  /* a keyword */
-  .com { color: #800 }  /* a comment */
-  .typ { color: #606 }  /* a type name */
-  .lit { color: #066 }  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #660 }
-  .tag { color: #008 }  /* a markup tag name */
-  .atn { color: #606 }  /* a markup attribute name */
-  .atv { color: #080 }  /* a markup attribute value */
-  .dec, .var { color: #606 }  /* a declaration; a variable name */
   .fun { color: red }  /* a function name */
+  
+  .kwd { color: #739a99; font-weight: bold } /* keyword */
+  .com { color: #B2B6BD } /* comment - light grey */
+  .typ { color: #98fb98 } /* type    - lightgreen */
+  .lit, .str { color: #cd5c5c } /* literal, string - darkred */
+  .pun, .opn, .clo { color: #fff }    /* punctuation */
+  .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+  .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
+  .atv { color: #ffa0a0 } /* attribute value - pink */
+  .dec, .var { color: #98fb98 } /* decimal         - lightgreen */
+
 }
 
 /* Use higher contrast and text-weight for printable form. */
