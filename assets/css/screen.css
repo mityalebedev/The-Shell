@@ -232,8 +232,9 @@ mark {
 
 code, tt {
     padding: 1px 3px;
+    /*font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;*/
     font-family: "Courier New", Courier, monospace;
-    font-size: 0.85em;
+    font-size: 0.75em;
     white-space: pre;
     border: 1px solid #424a5a;
     background: #4f586b;
@@ -247,8 +248,9 @@ pre {
     border: 1px solid #424a5a;
     width: 100%;
     padding: 10px;
+    /*font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;*/
     font-family: "Courier New", Courier, monospace;
-    font-size: 0.9em;
+    font-size: 0.8em;
     white-space: pre;
     overflow: auto;
     background: #4f586b;
@@ -481,6 +483,7 @@ button, input, select, textarea {
 
 .post-title {
     margin:0;
+    color: #739a99;
 }
 
 .post-title a {
