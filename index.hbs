@@ -26,7 +26,6 @@
             <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
             
-            <!--<a href="{{url}}#disqus_thread"></a>-->
         </header>
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
@@ -38,15 +37,4 @@
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}
 
-    <script type="text/javascript">
-    var disqus_shortname = d_id;
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
 </main>
