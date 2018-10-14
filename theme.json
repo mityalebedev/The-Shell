@@ -7,5 +7,5 @@
     "tag": "tag.hbs",
     "pagination": "pagination.hbs"
   },
-  "version":"1.0.0"
+  "version":"0.1.2"
 }
