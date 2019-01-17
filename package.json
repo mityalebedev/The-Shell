@@ -7,7 +7,6 @@
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
     },
-
     "license": "MIT",
     "screenshots": {
         "desktop": "assets/screenshot-desktop.jpg",
@@ -31,7 +30,8 @@
     },
     "keywords": [
         "ghost",
-        "theme"
+        "theme",
+        "ghost-theme"
     ],
     "repository": {
         "type": "git",
@@ -40,10 +40,14 @@
     "bugs": "https://github.com/mityalebedev/The-Shell/issues",
     "contributors": "https://github.com/mityalebedev/The-Shell/graphs/contributors",
     "devDependencies": {
+        "browser-sync": "^2.26.3",
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^6.0.0",
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-zip": "^4.2.0"
+    },
+    "config": {
+        "posts_per_page": 5
     }
 }

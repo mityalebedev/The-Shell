@@ -1,14 +1,20 @@
-var gulp = require('gulp');
+const  gulp  = require('gulp');
+const { watch } = require('gulp');
 
 // gulp plugins and utils
-var sourcemaps = require('gulp-sourcemaps');
-var zip = require('gulp-zip');
-var sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const zip = require('gulp-zip');
+const sass = require('gulp-sass');
+const browserSync = require("browser-sync").create();
 
 sass.compiler = require('node-sass');
 
 // css plugins
-var autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
+
+function reload() {
+    browserSync.reload();
+}
 
 function styles() {
     return gulp.src('assets/scss/screen.scss')
@@ -16,7 +22,8 @@ function styles() {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer({browsers: ['last 2 versions']}))
-        .pipe(gulp.dest('/assets/css/'))
+        .pipe(gulp.dest('assets/css/'))
+        .pipe(browserSync.stream());
 }
 
 function release() {
@@ -34,6 +41,16 @@ function release() {
         .pipe(gulp.dest(targetDir));
 }
 
+function watchFiles() {
+    browserSync.init({
+        proxy: "localhost:2368"
+    });
+
+    watch(['assets/scss/**/*.scss'], styles);
+    watch(['**/*.hbs'], styles);
+}
+
 
 exports.styles = styles;
 exports.release = release;
+exports.watch = watchFiles;
