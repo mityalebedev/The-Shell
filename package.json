@@ -1,20 +1,25 @@
 {
     "name": "the-shell",
-    "description" : "Simple theme for Ghost. Pure CSS. Web Safe fonts.",
-    "demo": "https://demo.ghost.io",
-    "version": "0.1.1",
+    "description": "Theme for Ghost which use 'Ghost in The Shell' animation series palette colors",
+    "demo": "https://ghostintheshell.ghost.io",
+    "version": "2.0.0",
     "engines": {
-        "ghost": ">=0.4.0 <1.0.0"
+        "ghost": ">=2.0.0",
+        "ghost-api": "v2"
     },
     "license": "MIT",
     "screenshots": {
         "desktop": "assets/screenshot-desktop.jpg",
         "mobile": "assets/screenshot-mobile.jpg"
     },
+    "scripts": {
+        "zip": "gulp release",
+        "test": "gscan ."
+    },
     "author": {
         "name": "Dmitry Lebedev",
         "email": "mityalebedev@me.com",
-        "url": "https://dmitrylebedev.me"
+        "url": "https://github.com/mityalebedev"
     },
     "gpm": {
         "type": "theme",
@@ -25,12 +30,24 @@
     },
     "keywords": [
         "ghost",
-        "theme"
+        "theme",
+        "ghost-theme"
     ],
     "repository": {
         "type": "git",
         "url": "https://github.com/mityalebedev/The-Shell.git"
     },
     "bugs": "https://github.com/mityalebedev/The-Shell/issues",
-    "contributors": "https://github.com/mityalebedev/The-Shell/graphs/contributors"
+    "contributors": "https://github.com/mityalebedev/The-Shell/graphs/contributors",
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-zip": "^4.2.0"
+    },
+    "config": {
+        "posts_per_page": 5
+    }
 }

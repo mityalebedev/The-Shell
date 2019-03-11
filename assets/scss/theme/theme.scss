@@ -13,37 +13,35 @@
     background-size: cover;
 }
 
-#blog {    
+#blog {
     &-logo {
         width: 100px;
         border-radius: 50%;
         overflow: hidden;
         display: block;
         margin: 0 auto;
-        border: 5px solid $contessa;
-        &:before {  
+        &:before {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             overflow: hidden;
             display: block;
             margin: 0 auto;
-            content: "";  
-            display: block;  
-            position: absolute;  
-            top: 0;  
-            bottom: 0;  
-            left: 0;  
-            right: 0; 
-            background: none; 
-            -moz-transition: background .3s linear;  
-            -webkit-transition: background .3s linear;  
-            -o-transition: background .3s linear;  
-            transition: background .3s linear;  
-            border: 5px solid $contessa;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: none;
+            -moz-transition: background .3s linear;
+            -webkit-transition: background .3s linear;
+            -o-transition: background .3s linear;
+            transition: background .3s linear;
         }
         &:hover:before {
-            background: rgba(204,31,39, 0.5);  
+            background: rgba(204,31,39, 0.5);
         }
         img {
             display: block;
@@ -89,10 +87,14 @@
     word-break: break-word;
     hyphens: auto;
     &-title {
-        margin:0;
         color: $heading;
+        margin:0;
         a {
+            color: $heading !important;
             text-decoration: none;
+            &:hover {
+                color: lighten($heading, 20%) !important;
+            }
         }
     }
     &-excerpt p {
@@ -111,6 +113,17 @@
         text-decoration: none;
         &:hover {
             text-decoration: underline;
+            color: lighten(#846d8f, 10%);
+        }
+    }
+    
+    &-header {
+        a {
+            color: $contessa;
+            transition: color ease 0.3s;
+            &:hover {
+                color: $selection-background-and-link-hover;
+            }
         }
     }
 }

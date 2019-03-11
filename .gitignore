@@ -2,3 +2,8 @@
 assets/scss/.sass-cache/
 assets/scss/css/
 assets/scss/config.codekit
+node_modules/
+dist/
+assets/.DS_Store
+.DS_Store
+.idea/
