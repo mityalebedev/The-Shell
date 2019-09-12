@@ -7,3 +7,4 @@ dist/
 assets/.DS_Store
 .DS_Store
 .idea/
+package-lock.json

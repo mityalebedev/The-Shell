@@ -43,13 +43,38 @@
             top: 4rem;
             right: 0;
             width: 140px;
+            display: inline-block;
             a {
                 font-size: 1.8rem;
-                display: inline-block;
                 margin: 1.4rem 1.6rem 1.6rem 0;
                 color: #BBC7CC;
                 &:hover {
                     color: #50585D;
+                }
+            }
+        }
+        @media screen and (min-width: 500px) {
+            .share {
+                position: absolute;
+                top: 4rem;
+                right: 0;
+                width: 140px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                h4 {
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
+                a {
+                    font-size: 1.8rem;
+                    margin: 1.4rem 1.6rem 1.6rem 0;
+                    color: #BBC7CC;
+                    flex-grow: 0;   
+                    &:hover {
+                        color: #50585D;
+                    }
                 }
             }
         }
