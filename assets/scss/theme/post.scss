@@ -21,6 +21,41 @@
         max-width: 100%;
         margin: 0 auto;
     }
+
+    &-subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        border: 1px solid #1d2027;
+        border-radius: 25px;
+        background:#1d2027;
+        z-index: 1;
+        box-shadow: 0px 0px 15px #1d2027;
+        h3 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .submit-button {
+            border-radius: 25px;
+            transition: background-color 0.3s ease !important; 
+        }
+        form {
+            width: 100%;
+            div {
+                width: 100%;
+                text-align: center;
+            }
+            text-align: center;
+        }
+        input {
+            border-radius: 5px;
+            width: 20em;
+            text-align: center
+        }
+    }
     &-footer {
         position: relative;
         margin: 4rem 0 0 0;
@@ -53,7 +88,7 @@
                 }
             }
         }
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 501px) {
             .share {
                 position: absolute;
                 top: 4rem;

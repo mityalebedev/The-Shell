@@ -32,6 +32,20 @@
         <section class="post-content">
             {{content}}
         </section>
+        {{#if @labs.subscribers}}
+        <section class = "post-subscribe">
+            <h3>Thanks for reading ❤️</h3>
+            <p>
+                You're pretty cool 🕶️! If it's 👌 with you
+                drop your email 📧 and you'll get an update whenever I
+                post something new ✨
+            </p> 
+            {{subscribe_form 
+              placeholder="Your email address"
+              autofocus="true"
+              button_class = "submit-button"}}
+        </section>
+        {{/if}}
 
         <footer class="post-footer">
 
