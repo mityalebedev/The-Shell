@@ -17,7 +17,14 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 700px){
+    .inner{
+        width: 95%
+    }
+}
+
 /* Centres vertically yo. (IE8+) */
+/* table-cell display lets it behave like a table-cell */
 .vertical {
     display: table-cell;
     vertical-align: middle;

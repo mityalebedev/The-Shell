@@ -1,0 +1,64 @@
+{{!< default}}
+
+
+<header id="site-head" {{#if @site.cover_image}}style="background-image: url({{@site.cover_image}})"{{/if}}>
+    <div class="vertical animated bounceInDown">
+        <div id="site-head-content" class="inner">
+            {{#if @site.logo}}<a id="blog-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="Blog Logo" /></a>{{/if}}
+            <h1 class="blog-title">{{@site.title}}</h1>
+            <h2 class="blog-description">{{@site.description}}</h2>
+            {{> "site-nav"}}
+        </div>
+    </div>
+</header>
+
+<main class="content" role = "main">
+    <div class="inner">
+        <article class="introduction">
+            <h1 class="introduction-title">👋 Welcome to my site 🌠!</h1>
+            <div class="introduction-container">
+                <p>
+                   Hey there ! My name is Omar Nasr, a full stack developer based out of
+                   Ottawa Ontario. My passion is to bring ideas to life and I especially love working on
+                   projects that have the potential to change the status quo. The federal public service of
+                   Canada is my current home. 
+                </p>
+                <img 
+                    class="introduction-container-img"
+                    src="/content/images/memojime.jpg">
+                </img>
+            </div>
+        </article>
+        <article class="introduction-post-container">
+            <h2> Read my latest post</h2>
+            {{#get "posts" limit="1" filter="tag:hash-blog"}}
+            {{! Each post will be output using this markup }}
+            {{#foreach posts}}
+            <article class="introduction-post">
+                <header class="post-header">
+                    <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
+                    <p class="post-meta-reading-time">{{reading_time}}</p>
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    {{#if feature_image}}
+                    <a class="post-feature-image-link" href={{url}}>
+                        <img class="post-feature-image"
+                            srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 600w,
+                                    {{img_url feature_image size="l"}} 1000w,
+                                    {{img_url feature_image size="xl"}} 2000w"
+                            src="{{img_url feature_image size="m"}}"
+                            sizes="(max-width: 1000px) 400px, 700px"
+                            alt="{{title}}"
+                        />
+                    </a>
+                    {{/if}}
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt}}&hellip;</p>
+                </section>
+            </article>
+            {{/foreach}}
+            {{/get}}
+        </article>
+    </div>
+</main>

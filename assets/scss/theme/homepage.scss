@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Homepage CSS Styling
+   ========================================================================== */
+
+
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    &-title{
+        align-self: center;
+        font-size: 3.0rem;
+    }
+    
+    &-container{
+        display: flex;
+        flex-direction: column;
+        p {
+            font-size: 1.7rem;
+            order: 2;
+        }
+        &-img{
+            flex-basis: auto;
+            align-self: center;
+            max-width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            order: 1;
+        }
+    }
+    &-post-container{
+        display: flex;
+        flex-direction: column;
+        h2{
+            align-self: center;
+            font-size: 3.0rem;
+        }
+    }
+    &-post{
+        position: relative;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }    
+    @media screen and (min-width: 700px) { 
+        &-container{
+            display: flex;
+            flex-basis: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            &-img{
+                flex-basis: auto;
+                width: 40%;
+                height: 250px;
+                border-radius: 5px;
+                margin: 5%;
+                order: 2;
+            }
+        }
+    }
+}

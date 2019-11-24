@@ -13,13 +13,14 @@
         "mobile": "assets/screenshot-mobile.jpg"
     },
     "scripts": {
+        "start": "gulp watch",
         "zip": "gulp release",
         "test": "gscan ."
     },
     "author": {
-        "name": "Dmitry Lebedev",
-        "email": "mityalebedev@me.com",
-        "url": "https://github.com/mityalebedev"
+        "name": "Omar Nasr",
+        "email": "omar@omarnasr.ca",
+        "url": "https://github.com/Moro-Code"
     },
     "gpm": {
         "type": "theme",
@@ -35,10 +36,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/mityalebedev/The-Shell.git"
+        "url": "https://github.com/Moro-Code/The-Shell.git"
     },
-    "bugs": "https://github.com/mityalebedev/The-Shell/issues",
-    "contributors": "https://github.com/mityalebedev/The-Shell/graphs/contributors",
+    "bugs": "https://github.com/Moro-Code/The-Shell/issues",
+    "contributors": "https://github.com/mityalebedev/Moro-Code/graphs/contributors",
     "devDependencies": {
         "browser-sync": "^2.26.3",
         "gulp": "^4.0.0",
