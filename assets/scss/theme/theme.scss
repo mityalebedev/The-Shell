@@ -97,6 +97,19 @@
             }
         }
     }
+    &-feature-image {
+        width: 100%;
+        height: 300px;
+        background: $background no-repeat center center;
+        object-fit: cover
+    }
+
+    &-feature-image-link {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+    }
     &-excerpt p {
         margin: 1.6rem 0 0 0;
         font-size: 0.9em;
@@ -115,6 +128,12 @@
             text-decoration: underline;
             color: lighten(#846d8f, 10%);
         }
+    }
+    &-meta-reading-time {
+        margin: 0;
+        display: block;
+        font-size: 1.5rem;
+        color: #846d8f;
     }
     
     &-header {
