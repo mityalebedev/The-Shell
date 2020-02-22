@@ -9,9 +9,9 @@
     }
 
     #site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         height: auto;
         min-height: 240px;
         padding: 15% 0;
@@ -40,7 +40,7 @@
         padding: 40px 0;
     }
     .post-header #blog-logo:before {
-        margin: 40px auto        
+        margin: 40px auto
     }
 
     h1 {
@@ -75,11 +75,11 @@
     #blog-logo {
         width: 80px;
     }
-    #blog-logo:before {  
+    #blog-logo:before {
         width: 80px;
         height: 80px;
     }
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
@@ -144,15 +144,6 @@
         margin: 0 0 2rem 0;
         padding: 0 0 1.6rem 0;
         border-bottom: $border 1px dashed;
-    }
-
-    .post-footer .share {
-        position: static;
-        width: auto;
-    }
-
-    .post-footer .share a {
-        margin: 1.4rem 0.8rem 0 0.8rem;
     }
 
     .older-posts,

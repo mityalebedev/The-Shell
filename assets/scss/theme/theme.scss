@@ -20,6 +20,7 @@
         overflow: hidden;
         display: block;
         margin: 0 auto;
+        position: relative;
         &:before {
             width: 100px;
             height: 100px;
@@ -28,7 +29,6 @@
             display: block;
             margin: 0 auto;
             content: "";
-            display: block;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -116,7 +116,7 @@
             color: lighten(#846d8f, 10%);
         }
     }
-    
+
     &-header {
         a {
             color: $contessa;
