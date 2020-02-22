@@ -35,20 +35,5 @@
         .author {
             margin-right: 180px;
         }
-        .share {
-            position: absolute;
-            top: 4rem;
-            right: 0;
-            width: 140px;
-            a {
-                font-size: 1.8rem;
-                display: inline-block;
-                margin: 1.4rem 1.6rem 1.6rem 0;
-                color: #BBC7CC;
-                &:hover {
-                    color: #50585D;
-                }
-            }
-        }
     }
 }

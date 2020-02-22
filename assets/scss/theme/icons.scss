@@ -38,25 +38,5 @@
         &:before {
             content: "\e000";
         }
-    } 
-    &-twitter {
-        @extend %icon;
-        &:before {
-            content: "\e002";
-            font-size: 1.1em;
-        }
     }
-    &-google-plus {
-        @extend %icon;
-        &:before {
-            content: "\e003";
-        }
-    }
-    &-facebook {
-        @extend %icon;
-        &:before {
-            content: "\e004";
-        }
-    }
-    
 }
